@@ -5,6 +5,8 @@
 #include <IPv6.h>
 #include <ndp.h>
 #include <net.h>
+#include <tcp.h>
+#include <html.h>
 byte ENC28J60::buffer[500];
 
 uint8_t ENC28J60::MAC[] = { 0x74,0x69,0x69,0x2D,0x30,0x31 };
