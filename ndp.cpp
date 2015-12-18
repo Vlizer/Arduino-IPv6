@@ -67,7 +67,7 @@ void NDP::sendAdvertisment(uint8_t *dst_ip, bool solicited, bool override) {
 
 	uint16_t tmp = IPv6::generateChecksum(0);
 	header->checksum = SWAP_16_H_L(tmp);
-  ,
+  
 	IPv6::packetSend(offset + 32);
 }
 

@@ -37,6 +37,21 @@
 #define ICMPv6_NBR_SOLICIT 135
 #define ICMPv6_NBR_ADVERT 136
 
+
+// *****TCP*****************
+#define TCP_NEXT_HEADER 0x06
+
+#define TCP_LISTEN 1
+#define TCP_SYN_SENT 2
+#define TCP_SYN_RECEIVED 3
+#define TCP_ESTABLISHED 4
+#define TCP_FIN_WAIT_1 5
+#define TCP_FIN_WAIT_2 6
+#define TCP_CLOSE_WAIT 7
+#define TCP_CLOSING 8
+#define TCP_LAST_ACK 9
+#define TCP_TIME_WAIT 10
+
 #define SWAP_16_H_L(val) ((uint16_t) (val) >> 8 | (uint16_t) (val) << 8)
 #define SWAP_32(val) (((val) >> 24) | (((val) & 0xFF0000) >> 8) | (((val) & 0xFF00) << 8) | ((val) << 24))
 #define BIG_ENDIAN_JOIN(val1, val2) ((uint16_t) (val1) << 8 | (uint16_t) (val2))
